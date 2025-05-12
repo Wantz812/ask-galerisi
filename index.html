@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sen ve Ben 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px #00000030;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .heart {
+      color: red;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>Seninle Geçen Anlar 💕</header>
+  <div class="gallery">
+    <div class="gallery">
+        <img src="images/photo1.jpg" alt="Birlikte anımız 1">
+        <img src="images/photo2.jpg" alt="Birlikte anımız 2">
+        <img src="images/photo3.jpg" alt="Birlikte anımız 3">
+        <img src="images/photo4.jpg" alt="Birlikte anımız 4">
+        <img src="images/photo5.jpg" alt="Birlikte anımız 5">
+        <img src="images/photo6.jpg" alt="Birlikte anımız 6">
+        <img src="images/photo7.jpg" alt="Birlikte anımız 7">
+        <img src="images/photo8.jpg" alt="Birlikte anımız 8">
+        <img src="images/photo9.jpg" alt="Birlikte anımız 9">
+        <img src="images/photo10.jpg" alt="Birlikte anımız 10">
+      </div>      
+    <!-- Daha fazla resim ekle -->
+  </div>
+  <footer>
+    Bu anılar hep kalbimizde <span class="heart">❤</span><br>
+    <small>Hazırlayan: Senin Sevgilin 💌</small>
+  </footer>
+</body>
+</html>
